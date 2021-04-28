@@ -27,8 +27,8 @@ local switch1 = false
 local switch2 = false
 local i = 1
 local function resolve(player)
-    plist.set(player, "Correction active", false) -- disable default correction because i have a superiority complex
-    plist.set(player, "Force body yaw", true) -- enable the forcing of the body yaw
+    plist.set(player, "Correction active", false) --Disabling the original correction
+    plist.set(player, "Force body yaw", true) -- Enable the forcing of the body yaw.
 
     if last_angle == -new_angle and switch1 then
         new_angle = -angles[i]
