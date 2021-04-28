@@ -43,7 +43,7 @@ local function resolve(player)
         end
         new_angle = angles[i]
     end
-  plist.set(player, "Force body yaw value", new_angle) -- force yaw value to random
+  plist.set(player, "Force body yaw value", new_angle) -- Will pick from the numbers at "local angles" 
     last_angle = new_angle
     switch2 = false
 end
